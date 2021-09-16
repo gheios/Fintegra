@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculador de edad</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
     <section class="datos">
         <h4>Calculador de Edad</h4>
-        <form onsubmit="api_url()" id="elem">
-        <input class="entrada" type="text" name="nombre" id="nombres" placeholder="Ingrese Nombre">
+        <form  onsubmit="event.preventDefault(); return validateMyForm();" id="elem">
+        <input class="entrada" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre">
         <input class="entrada" type="text" name="localizacion " id="localizacion" placeholder="Ingrese Localizacion">
-        <input   formaction="resultado.html" class="boton" type="submit" value="Registrar" >
+        <input   formaction="/prueba 2/script2.js" class="boton" type="submit" value="Registrar" >
     </form>
     </section>
 

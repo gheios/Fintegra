@@ -48,3 +48,34 @@ body{
   .datos .boton:hover{
     background-color: tomato;
   }
+
+  .tabla{
+ font-family: "calibri";
+    margin: 150px auto;
+    width: 600px;
+  }
+  table{
+      background-color: white;
+      text-align: left;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  th,td {
+      padding: 20px;
+
+  }
+  thead{
+    background-color: blue;
+      border-bottom:  solid 5px #0f362d;
+      color: black;
+  }
+
+
+  tr:nth-child(odd){
+      background-color: rgb(33, 101, 228);
+  }
+  tr:hover td{
+      background-color:#192f4d ;
+      color: white;
+  }

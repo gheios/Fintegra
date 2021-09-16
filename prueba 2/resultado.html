@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/prueba 2/styles.css">
+    
     <title>resultado</title>
 </head>
 <body>
     
+    <div class="tabla">
+        <table class="board">
+            <thead>
+                <tr><th>nombre</th><th>edad</th><th>localizacion</th></tr>
+            </thead>
+            <tr><td></td><td>69</td><td>españa</td></tr>
+        </table>
+    </div>
+    <script src="/prueba 2/script2.js"></script>
+    <scrip type="text/javascript">
+        var results = JSON.parse(window.localStorage.getItem("Results"))
+        var container = document.getElementId("div")
+        container.innerText = results.age
+    </scrip>
 </body>
 </html>

@@ -1,18 +1,16 @@
 
-const api_url= "https://api.agify.io?name=''";
-fetch(api_url)
-.then(res =>res.json())
-.then(data=>{
-  let element= document.getElementById('elem')
- 
- element.addEventListener('submit',function(e){
-     e.preventDefault();
-    
-     let dat =new FormData(element) 
-     console.log(element)
- }
-     )
-}
-)
+const api_url= "https://api.agify.io";
+function  validateMyForm(){
+   
+var name= document.getElementById("nombre")
+var localizacion= document.getElementById("localizacion")
 
-.catch(err=>console.log(err))
+fetch(`${api_url}?name=${name.value}&country_id${localizacion.value}`)
+//esto que hago haga se llama literal string, para que averigues luego
+.then(res => res.json())
+.then(data=>{
+    console.log(data)
+    window.localStorage.setItem("Results", JSON.stringify(data))
+})
+.catch(error=>console.log(error))
+}
