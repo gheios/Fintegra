@@ -12,10 +12,10 @@
 <body>
     <section class="datos">
         <h4>Calculador de Edad</h4>
-        <form  onsubmit="" id="elem">
+        <form  onsubmit="event.preventDefault(); return validateMyForm();" id="elem">
         <input class="entrada" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required>
         <input class="entrada" type="text" name="localizacion " id="localizacion" placeholder="Ingrese Localizacion">
-        <input   formaction="/prueba 2/resultado.html" class="boton" type="submit" value="Registrar" >
+        <input   class="boton" type="submit" value="Registrar"  >
     </form>
     </section>
 

@@ -12,6 +12,11 @@ fetch(`${api_url}?name=${name.value}&country_id${localizacion.value}`)
 .then(data=>{
     console.log(data)
     window.localStorage.setItem("Results", JSON.stringify(data))
+    mypage();
 })
 .catch(error=>console.log(error))
+ 
+
 }
+ function mypage() {
+    window.location.replace('resultado.html')}
