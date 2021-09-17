@@ -79,7 +79,7 @@ body{
       background-color:#192f4d ;
       color: white;
   }
-  button{
+  .button{
       
     width: 100%;
     background: #6c78eb;
@@ -92,6 +92,6 @@ body{
     font-family: 'calibri';
 
   }
-  button:hover{
+  .button:hover{
     background-color: tomato;
   }

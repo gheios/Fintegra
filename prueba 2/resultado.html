@@ -16,7 +16,7 @@
                 <tr><th>nombre</th><th>edad</th><th>localizacion</th></tr></thead>
                 <tr id="tablee"></tr>
         </table>
-       <button type="submit" class="button" formaction="/prueba 2/index.html">Volver</button>
+       <button  class="button" formaction="/prueba 2/index.html">Volver</button>
     </div>
  
     
@@ -31,7 +31,10 @@ container.innerHTML += `
         <td>${results.count}</td>
 ` ;
 tabla.appendChild(container);
-
+ let btnBack= document.querySelector('button');
+        btnBack.addEventListener('click',()=>{
+            window.history.back();
+        })
     </script>
   
 </body>
