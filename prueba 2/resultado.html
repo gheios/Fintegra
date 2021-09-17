@@ -11,10 +11,10 @@
 <body>
     
     <div class="tabla">
-        <table class="board">
+        <table id="board">
             <thead>
                 <tr><th>nombre</th><th>edad</th><th>localizacion</th></tr></thead>
-                <tr id="tablee"><td></td><td></td><td></td></tr>
+                <tr id="tablee"></tr>
         </table>
        <button type="submit" class="button" formaction="/prueba 2/index.html">Volver</button>
     </div>
@@ -22,13 +22,15 @@
     
       
     <script type ="text/javascript">
+    const tabla=document.querySelector('#board');
        var results = JSON.parse(window.localStorage.getItem("Results"))
-var container = document.getElementById("tablee");
-container.innerText = `
+var container = document.createElement("tr");
+container.innerHTML += `
         <td>${results.name}</td>
         <td>${results.age}</td>
-        <td>${results.localizacion}</td>
+        <td>${results.count}</td>
 ` ;
+tabla.appendChild(container);
 
     </script>
   

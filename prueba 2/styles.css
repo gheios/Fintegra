@@ -66,14 +66,14 @@ body{
 
   }
   thead{
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
       border-bottom:  solid 5px #0f362d;
       color: black;
   }
 
 
   tr:nth-child(odd){
-      background-color: rgb(33, 101, 228);
+      background-color: rgb(234, 235, 236);
   }
   tr:hover td{
       background-color:#192f4d ;
